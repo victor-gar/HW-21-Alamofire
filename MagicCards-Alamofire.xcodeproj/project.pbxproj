@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A964EC93B2A9F27C7FB404 /* libPods-MagicCards-Alamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FC6E66D8B65A221BB1E7DF /* libPods-MagicCards-Alamofire.a */; };
 		1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007129E7F21600CB6FA6 /* AppDelegate.swift */; };
 		1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007329E7F21600CB6FA6 /* SceneDelegate.swift */; };
 		1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007529E7F21600CB6FA6 /* MagicViewController.swift */; };
@@ -20,6 +21,9 @@
 		1690007529E7F21600CB6FA6 /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
 		1690007A29E7F21A00CB6FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1690007F29E7F21A00CB6FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FC6E66D8B65A221BB1E7DF /* libPods-MagicCards-Alamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicCards-Alamofire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF1302EB503CF5D52112B6E /* Pods-MagicCards-Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCards-Alamofire.release.xcconfig"; path = "Target Support Files/Pods-MagicCards-Alamofire/Pods-MagicCards-Alamofire.release.xcconfig"; sourceTree = "<group>"; };
+		B2644159DC069118167427CC /* Pods-MagicCards-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCards-Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-MagicCards-Alamofire/Pods-MagicCards-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A964EC93B2A9F27C7FB404 /* libPods-MagicCards-Alamofire.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				1690007029E7F21600CB6FA6 /* MagicCards-Alamofire */,
 				1690006F29E7F21600CB6FA6 /* Products */,
+				7137B8AD3C8E8EF554944631 /* Pods */,
+				960A0BF0EEAD951D12B4E22E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,24 @@
 			path = "MagicCards-Alamofire";
 			sourceTree = "<group>";
 		};
+		7137B8AD3C8E8EF554944631 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2644159DC069118167427CC /* Pods-MagicCards-Alamofire.debug.xcconfig */,
+				9BF1302EB503CF5D52112B6E /* Pods-MagicCards-Alamofire.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		960A0BF0EEAD951D12B4E22E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41FC6E66D8B65A221BB1E7DF /* libPods-MagicCards-Alamofire.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,6 +93,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1690008229E7F21A00CB6FA6 /* Build configuration list for PBXNativeTarget "MagicCards-Alamofire" */;
 			buildPhases = (
+				A303AA0BD16367D3D1D9167A /* [CP] Check Pods Manifest.lock */,
 				1690006A29E7F21600CB6FA6 /* Sources */,
 				1690006B29E7F21600CB6FA6 /* Frameworks */,
 				1690006C29E7F21600CB6FA6 /* Resources */,
@@ -124,6 +150,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A303AA0BD16367D3D1D9167A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicCards-Alamofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1690006A29E7F21600CB6FA6 /* Sources */ = {
@@ -255,6 +306,7 @@
 		};
 		1690008329E7F21A00CB6FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2644159DC069118167427CC /* Pods-MagicCards-Alamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -282,6 +334,7 @@
 		};
 		1690008429E7F21A00CB6FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BF1302EB503CF5D52112B6E /* Pods-MagicCards-Alamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
