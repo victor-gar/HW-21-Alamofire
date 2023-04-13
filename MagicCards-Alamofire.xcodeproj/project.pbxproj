@@ -9,20 +9,16 @@
 /* Begin PBXBuildFile section */
 		1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007129E7F21600CB6FA6 /* AppDelegate.swift */; };
 		1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007329E7F21600CB6FA6 /* SceneDelegate.swift */; };
-		1690007629E7F21600CB6FA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007529E7F21600CB6FA6 /* ViewController.swift */; };
-		1690007929E7F21600CB6FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1690007729E7F21600CB6FA6 /* Main.storyboard */; };
+		1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007529E7F21600CB6FA6 /* MagicViewController.swift */; };
 		1690007B29E7F21A00CB6FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1690007A29E7F21A00CB6FA6 /* Assets.xcassets */; };
-		1690007E29E7F21A00CB6FA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1690007C29E7F21A00CB6FA6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1690006E29E7F21600CB6FA6 /* MagicCards-Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagicCards-Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1690007129E7F21600CB6FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1690007329E7F21600CB6FA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1690007529E7F21600CB6FA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1690007829E7F21600CB6FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1690007529E7F21600CB6FA6 /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
 		1690007A29E7F21A00CB6FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1690007D29E7F21A00CB6FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1690007F29E7F21A00CB6FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,10 +54,8 @@
 			children = (
 				1690007129E7F21600CB6FA6 /* AppDelegate.swift */,
 				1690007329E7F21600CB6FA6 /* SceneDelegate.swift */,
-				1690007529E7F21600CB6FA6 /* ViewController.swift */,
-				1690007729E7F21600CB6FA6 /* Main.storyboard */,
+				1690007529E7F21600CB6FA6 /* MagicViewController.swift */,
 				1690007A29E7F21A00CB6FA6 /* Assets.xcassets */,
-				1690007C29E7F21A00CB6FA6 /* LaunchScreen.storyboard */,
 				1690007F29E7F21A00CB6FA6 /* Info.plist */,
 			);
 			path = "MagicCards-Alamofire";
@@ -125,9 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1690007E29E7F21A00CB6FA6 /* LaunchScreen.storyboard in Resources */,
 				1690007B29E7F21A00CB6FA6 /* Assets.xcassets in Resources */,
-				1690007929E7F21600CB6FA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +130,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1690007629E7F21600CB6FA6 /* ViewController.swift in Sources */,
+				1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */,
 				1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */,
 				1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1690007729E7F21600CB6FA6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1690007829E7F21600CB6FA6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1690007C29E7F21A00CB6FA6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1690007D29E7F21A00CB6FA6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1690008029E7F21A00CB6FA6 /* Debug */ = {
@@ -292,7 +265,6 @@
 				INFOPLIST_FILE = "MagicCards-Alamofire/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +292,6 @@
 				INFOPLIST_FILE = "MagicCards-Alamofire/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
