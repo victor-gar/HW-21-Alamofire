@@ -44,10 +44,10 @@ class MagicCardTableViewCell: UITableViewCell {
         }
     }
     
-    func configure(with card: Card) {
-        nameLabel.text = card.name
-        if let url = URL(string: card.imageUrl) {
-            cardImageView.af.setImage(withURL: url)
-        }
-    }
+    func configure(with viewModel: CardViewModel) {
+           nameLabel.text = viewModel.name
+           if let imageUrl = viewModel.imageUrl {
+               cardImageView.af.setImage(withURL: imageUrl)
+           }
+       }
 }
