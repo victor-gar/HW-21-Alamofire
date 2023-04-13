@@ -14,11 +14,13 @@ class CardsViewModel {
     
     private let apiURL = "https://api.magicthegathering.io/v1/cards"
     private var cards: [Card] = []
-    
+    private var filteredCards: [Card] = []
+    private var isFiltering: Bool = false
+
     var numberOfRows: Int {
-        return cards.count
+        return isFiltering ? filteredCards.count : cards.count
     }
-    
+
     // Получение данных с API и сохранение в массив cards
     func getCards(completion: @escaping () -> ()) {
         AF.request(apiURL).validate().responseDecodable(of: CardList.self) { response in
@@ -27,9 +29,20 @@ class CardsViewModel {
             completion()
         }
     }
-    
-    // Получить карту по индексу из массива cards
+ 
     func getCard(at index: Int) -> Card {
-        return cards[index]
+        return isFiltering ? filteredCards[index] : cards[index]
     }
+
+    // Фильтрация карт по названию
+    func filterCards(with searchText: String) {
+        filteredCards = cards.filter { $0.name.lowercased().contains(searchText.lowercased()) }
+        isFiltering = true
+    }
+
+    // Отмена фильтрации карт
+    func cancelFilter() {
+        isFiltering = false
+    }
+
 }
