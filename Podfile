@@ -1,3 +1,4 @@
 target 'MagicCards-Alamofire' do
-  pod 'Alamofire', '~> 5.5’
+  pod 'AlamofireImage'
+  pod 'Alamofire', '~> 5.5'
 end
