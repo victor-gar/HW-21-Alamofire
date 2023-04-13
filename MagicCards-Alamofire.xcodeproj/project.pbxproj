@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07A964EC93B2A9F27C7FB404 /* libPods-MagicCards-Alamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FC6E66D8B65A221BB1E7DF /* libPods-MagicCards-Alamofire.a */; };
 		161C2CCF29E80BAD00FEA803 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 161C2CCE29E80BAD00FEA803 /* SnapKit */; };
+		161C2CDA29E80F1C00FEA803 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C2CD929E80F1C00FEA803 /* Model.swift */; };
 		1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007129E7F21600CB6FA6 /* AppDelegate.swift */; };
 		1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007329E7F21600CB6FA6 /* SceneDelegate.swift */; };
 		1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007529E7F21600CB6FA6 /* MagicViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161C2CD929E80F1C00FEA803 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1690006E29E7F21600CB6FA6 /* MagicCards-Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagicCards-Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1690007129E7F21600CB6FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1690007329E7F21600CB6FA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		161C2CD329E80D8000FEA803 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				161C2CD929E80F1C00FEA803 /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */,
 				1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */,
 				1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */,
+				161C2CDA29E80F1C00FEA803 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
