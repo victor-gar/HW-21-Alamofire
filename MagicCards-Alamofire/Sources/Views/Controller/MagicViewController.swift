@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import SnapKit
 
 class MagicViewController: UIViewController {
 
