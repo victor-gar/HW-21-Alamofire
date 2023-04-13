@@ -13,3 +13,7 @@ struct Card: Codable {
     let imageUrl: String
     let text: String
 }
+
+struct CardList: Codable {
+    let cards: [Card]
+}
