@@ -85,8 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				161C2CD829E80DFB00FEA803 /* Cell */,
-				161C2CD729E80DE800FEA803 /* View */,
-				161C2CD629E80DDC00FEA803 /* Controller */,
+				161C2CD729E80DE800FEA803 /* ViewController */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,19 +98,12 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		161C2CD629E80DDC00FEA803 /* Controller */ = {
+		161C2CD729E80DE800FEA803 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				1690007529E7F21600CB6FA6 /* MagicViewController.swift */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		161C2CD729E80DE800FEA803 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		161C2CD829E80DFB00FEA803 /* Cell */ = {
