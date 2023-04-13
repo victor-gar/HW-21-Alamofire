@@ -40,6 +40,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161C2CD029E80C5100FEA803 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1690007F29E7F21A00CB6FA6 /* Info.plist */,
+				1690007A29E7F21A00CB6FA6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		161C2CD129E80C6500FEA803 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				161C2CD329E80D8000FEA803 /* Models */,
+				161C2CD429E80D8A00FEA803 /* Views */,
+				161C2CD529E80DAF00FEA803 /* ViewModels */,
+				161C2CD229E80CDC00FEA803 /* Application */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		161C2CD229E80CDC00FEA803 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1690007129E7F21600CB6FA6 /* AppDelegate.swift */,
+				1690007329E7F21600CB6FA6 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		161C2CD329E80D8000FEA803 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		161C2CD429E80D8A00FEA803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				161C2CD829E80DFB00FEA803 /* Cell */,
+				161C2CD729E80DE800FEA803 /* View */,
+				161C2CD629E80DDC00FEA803 /* Controller */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		161C2CD529E80DAF00FEA803 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		161C2CD629E80DDC00FEA803 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1690007529E7F21600CB6FA6 /* MagicViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		161C2CD729E80DE800FEA803 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		161C2CD829E80DFB00FEA803 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		1690006529E7F21600CB6FA6 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +136,8 @@
 		1690007029E7F21600CB6FA6 /* MagicCards-Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				1690007129E7F21600CB6FA6 /* AppDelegate.swift */,
-				1690007329E7F21600CB6FA6 /* SceneDelegate.swift */,
-				1690007529E7F21600CB6FA6 /* MagicViewController.swift */,
-				1690007A29E7F21A00CB6FA6 /* Assets.xcassets */,
-				1690007F29E7F21A00CB6FA6 /* Info.plist */,
+				161C2CD129E80C6500FEA803 /* Sources */,
+				161C2CD029E80C5100FEA803 /* Resources */,
 			);
 			path = "MagicCards-Alamofire";
 			sourceTree = "<group>";
@@ -321,7 +393,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LLVUWV97ZX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MagicCards-Alamofire/Info.plist";
+				INFOPLIST_FILE = "MagicCards-Alamofire/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -349,7 +421,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LLVUWV97ZX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MagicCards-Alamofire/Info.plist";
+				INFOPLIST_FILE = "MagicCards-Alamofire/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
