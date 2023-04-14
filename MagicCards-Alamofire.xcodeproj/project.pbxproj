@@ -11,7 +11,6 @@
 		160CEEE729E81EE000B989A3 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160CEEE629E81EE000B989A3 /* CardViewModel.swift */; };
 		161C2CCF29E80BAD00FEA803 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 161C2CCE29E80BAD00FEA803 /* SnapKit */; };
 		161C2CDA29E80F1C00FEA803 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C2CD929E80F1C00FEA803 /* Model.swift */; };
-		161C2CDC29E80FDF00FEA803 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C2CDB29E80FDF00FEA803 /* CardsViewModel.swift */; };
 		161C2CDE29E8149600FEA803 /* MagicCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C2CDD29E8149600FEA803 /* MagicCardTableViewCell.swift */; };
 		1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007129E7F21600CB6FA6 /* AppDelegate.swift */; };
 		1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007329E7F21600CB6FA6 /* SceneDelegate.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		160CEEE629E81EE000B989A3 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		161C2CD929E80F1C00FEA803 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		161C2CDB29E80FDF00FEA803 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		161C2CDD29E8149600FEA803 /* MagicCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCardTableViewCell.swift; sourceTree = "<group>"; };
 		1690006E29E7F21600CB6FA6 /* MagicCards-Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagicCards-Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1690007129E7F21600CB6FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 		161C2CD529E80DAF00FEA803 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				161C2CDB29E80FDF00FEA803 /* CardsViewModel.swift */,
 				160CEEE629E81EE000B989A3 /* CardViewModel.swift */,
 			);
 			path = ViewModels;
@@ -264,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				161C2CDC29E80FDF00FEA803 /* CardsViewModel.swift in Sources */,
 				1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */,
 				1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */,
 				1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */,
@@ -327,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -381,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
