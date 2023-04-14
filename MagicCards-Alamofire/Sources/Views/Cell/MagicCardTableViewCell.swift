@@ -7,12 +7,15 @@
 
 import SnapKit
 import AlamofireImage
+import Alamofire
 import UIKit
 
 class MagicCardTableViewCell: UITableViewCell {
-    
-    private let nameLabel = UILabel()
-    private let cardImageView = UIImageView()
+
+    static let reuseIdentifier = "MagicCardTableViewCell"
+
+    private let nameLabelS = UILabel()
+    private let imageViewS = UIImageView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -25,18 +28,18 @@ class MagicCardTableViewCell: UITableViewCell {
     }
     
     private func setupHierarchy() {
-        contentView.addSubview(nameLabel)
-        contentView.addSubview(cardImageView)
+        contentView.addSubview(nameLabelS)
+        contentView.addSubview(imageViewS)
     }
     
     private func setupLayout() {
-        nameLabel.snp.makeConstraints { make in
+        nameLabelS.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
             make.leading.equalToSuperview().offset(10)
-            make.trailing.equalTo(cardImageView.snp.leading).offset(-10)
+            make.trailing.equalTo(imageViewS.snp.leading).offset(-10)
             make.bottom.equalToSuperview().offset(-10)
         }
-        cardImageView.snp.makeConstraints { make in
+        imageViewS.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
             make.trailing.equalToSuperview().offset(-10)
             make.bottom.equalToSuperview().offset(-10)
@@ -44,10 +47,17 @@ class MagicCardTableViewCell: UITableViewCell {
         }
     }
     
-    func configure(with viewModel: CardViewModel) {
-           nameLabel.text = viewModel.name
-           if let imageUrl = viewModel.imageUrl {
-               cardImageView.af.setImage(withURL: imageUrl)
-           }
-       }
+    func configure(with card: Card) {
+        // Отображение информации о карте
+        nameLabelS.text = card.name
+        if let imageUrl = card.imageUrl {
+            AF.request(imageUrl).response { response in
+                if let data = response.data {
+                    self.imageViewS.image = UIImage(data: data)
+                }
+            }
+        } else {
+            self.imageViewS.image = nil
+        }
+    }
 }

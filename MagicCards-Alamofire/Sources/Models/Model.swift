@@ -8,12 +8,16 @@
 import Foundation
 
 // Model
-struct Card: Codable {
+struct Card: Decodable {
     let name: String
-    let imageUrl: String
-    let text: String
+    let imageUrl: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case imageUrl = "imageUrl"
+    }
 }
 
-struct CardList: Codable {
+struct CardListResponse: Decodable {
     let cards: [Card]
 }
