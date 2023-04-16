@@ -9,10 +9,12 @@ import Foundation
 
 // Model
 struct Card: Decodable {
-    let name: String
+    let name, type, manaCost: String
     let imageUrl: String?
     
     enum CodingKeys: String, CodingKey {
+        case manaCost
+        case type
         case name
         case imageUrl = "imageUrl"
     }
