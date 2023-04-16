@@ -137,15 +137,34 @@ class MagicViewController: UIViewController {
     @objc private func searchButtonTapped() {
         view.endEditing(true)
         viewModel.search(for: searchField.text ?? "") {
-            self.tableView.reloadData()
+        DispatchQueue.main.async {
+        self.tableView.reloadData()
+        if self.viewModel.numberOfCards() == 0 {
+        let alert = UIAlertController(title: "Ошибка", message: "Данные не найдены", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
         }
-    }
+        }
+        }
+            
+            if self.viewModel.numberOfCards() == 0 {
+                let alert = UIAlertController(title: "Ошибка", message: "Данные не найдены", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    
     
     @objc private func resetButtonTapped() {
+        fetchCards()
         searchField.text = ""
         viewModel.search(for: "") {
             self.tableView.reloadData()
+
         }
+
     }
 }
 
