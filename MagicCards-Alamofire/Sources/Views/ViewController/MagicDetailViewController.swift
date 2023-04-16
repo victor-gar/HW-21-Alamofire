@@ -14,7 +14,6 @@ class MagicDetailViewController: UIViewController {
     
     public var card: Card?
     
-    
     // MARK: - UI Elements
     
     private let cardImageView: UIImageView = {
@@ -26,7 +25,7 @@ class MagicDetailViewController: UIViewController {
     
     private let cardNameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 26, weight: .bold)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -61,18 +60,18 @@ class MagicDetailViewController: UIViewController {
         cardImageView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
             make.centerX.equalToSuperview()
-            make.width.equalToSuperview().multipliedBy(0.6)
+            make.width.equalToSuperview().multipliedBy(1.3)
             make.height.equalTo(cardImageView.snp.width)
         }
         
         cardNameLabel.snp.makeConstraints { make in
-            make.top.equalTo(cardImageView.snp.bottom).offset(20)
+            make.top.equalTo(cardImageView.snp.bottom).offset(10)
             make.leading.trailing.equalToSuperview().inset(20)
         }
         
         cardDescriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(cardNameLabel.snp.bottom).offset(20)
-            make.leading.trailing.equalToSuperview().inset(20)
+            make.centerX.equalToSuperview()
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(20)
         }
     }
