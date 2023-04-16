@@ -16,6 +16,7 @@
 		1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007329E7F21600CB6FA6 /* SceneDelegate.swift */; };
 		1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007529E7F21600CB6FA6 /* MagicViewController.swift */; };
 		1690007B29E7F21A00CB6FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1690007A29E7F21A00CB6FA6 /* Assets.xcassets */; };
+		16A59C4C29E9526100862E85 /* MagicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A59C4B29E9526100862E85 /* MagicDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1690007529E7F21600CB6FA6 /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
 		1690007A29E7F21A00CB6FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1690007F29E7F21A00CB6FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A59C4B29E9526100862E85 /* MagicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicDetailViewController.swift; sourceTree = "<group>"; };
 		41FC6E66D8B65A221BB1E7DF /* libPods-MagicCards-Alamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicCards-Alamofire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF1302EB503CF5D52112B6E /* Pods-MagicCards-Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCards-Alamofire.release.xcconfig"; path = "Target Support Files/Pods-MagicCards-Alamofire/Pods-MagicCards-Alamofire.release.xcconfig"; sourceTree = "<group>"; };
 		B2644159DC069118167427CC /* Pods-MagicCards-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCards-Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-MagicCards-Alamofire/Pods-MagicCards-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				1690007529E7F21600CB6FA6 /* MagicViewController.swift */,
+				16A59C4B29E9526100862E85 /* MagicDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */,
 				1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */,
 				1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */,
+				16A59C4C29E9526100862E85 /* MagicDetailViewController.swift in Sources */,
 				161C2CDA29E80F1C00FEA803 /* Model.swift in Sources */,
 				161C2CDE29E8149600FEA803 /* MagicCardTableViewCell.swift in Sources */,
 				160CEEE729E81EE000B989A3 /* CardViewModel.swift in Sources */,
