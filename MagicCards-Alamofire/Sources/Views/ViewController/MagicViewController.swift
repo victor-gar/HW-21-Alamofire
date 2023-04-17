@@ -12,11 +12,13 @@ import AlamofireImage
 class MagicViewController: UIViewController {
     
     //MARK: - Properties
-
+    
     private let viewModel = CardListViewModel()
+    private var searchTimer: Timer?
+    var allDataLoaded: Bool = false
     
     //MARK: - UI Elements
-
+    
     private let searchField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Поиск"
@@ -63,16 +65,23 @@ class MagicViewController: UIViewController {
     }()
     
     //MARK: - Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchCards()
         setupHierarchy()
         setupLayout()
         setupActions()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.isHidden = true
+        fetchCards()
         view.backgroundColor = UIColor.white
+        viewModel.fetchCards { [weak self] in
+            self?.allDataLoaded = true
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
     
     private func setupHierarchy() {
@@ -83,7 +92,7 @@ class MagicViewController: UIViewController {
     }
     
     //MARK: - Setups
-
+    
     private func setupLayout() {
         searchField.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
@@ -124,6 +133,7 @@ class MagicViewController: UIViewController {
             DispatchQueue.main.async {
                 self?.activityIndicator.stopAnimating()
                 self?.tableView.reloadData()
+                self?.tableView.isHidden = false
             }
         }
     }
@@ -136,35 +146,30 @@ class MagicViewController: UIViewController {
     
     @objc private func searchButtonTapped() {
         view.endEditing(true)
-        viewModel.search(for: searchField.text ?? "") {
-        DispatchQueue.main.async {
-        self.tableView.reloadData()
-        if self.viewModel.numberOfCards() == 0 {
-        let alert = UIAlertController(title: "Ошибка", message: "Данные не найдены", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
-        alert.addAction(okAction)
-        self.present(alert, animated: true, completion: nil)
-        }
-        }
-        }
-            
-            if self.viewModel.numberOfCards() == 0 {
-                let alert = UIAlertController(title: "Ошибка", message: "Данные не найдены", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
-                alert.addAction(okAction)
-                self.present(alert, animated: true, completion: nil)
+        searchTimer?.invalidate()
+        searchTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+            self.viewModel.search(for: self.searchField.text ?? "") {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                    if self.viewModel.numberOfCards() == 0 {
+                        let alert = UIAlertController(title: "Ошибка", message: "Данные не найдены", preferredStyle: .alert)
+                        let okAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
+                        alert.addAction(okAction)
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
             }
         }
-    
+    }
     
     @objc private func resetButtonTapped() {
-        fetchCards()
+        tableView.isHidden = true
         searchField.text = ""
         viewModel.search(for: "") {
             self.tableView.reloadData()
-
         }
-
+        fetchCards()
+        tableView.isHidden = false
     }
 }
 
@@ -177,7 +182,13 @@ extension MagicViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MagicCardTableViewCell.reuseIdentifier, for: indexPath) as! MagicCardTableViewCell
+        guard allDataLoaded else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: MagicCardTableViewCell.reuseIdentifier, for: indexPath)
+            return cell
+        }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MagicCardTableViewCell.reuseIdentifier, for: indexPath) as? MagicCardTableViewCell else {
+            fatalError("Unable to dequeue MagicCardTableViewCell")
+        }
         let card = viewModel.card(at: indexPath.row)
         cell.configure(with: card)
         return cell
@@ -193,5 +204,5 @@ extension MagicViewController: UITableViewDelegate, UITableViewDataSource {
         cardDetailsViewController.card = viewModel.card(at: indexPath.row)
         present(cardDetailsViewController, animated: true)
     }
-    }
+}
 
