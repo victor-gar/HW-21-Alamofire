@@ -126,6 +126,9 @@
 		1690006529E7F21600CB6FA6 = {
 			isa = PBXGroup;
 			children = (
+				16311F2A29ED3F0B00A3FA58 /* README.md */,
+				16311F2C29ED3F3200A3FA58 /* screenshot.png */,
+				161C2CD129E80C6500FEA803 /* Sources */,
 				1690007029E7F21600CB6FA6 /* MagicCards-Alamofire */,
 				1690006F29E7F21600CB6FA6 /* Products */,
 				7137B8AD3C8E8EF554944631 /* Pods */,
@@ -144,9 +147,6 @@
 		1690007029E7F21600CB6FA6 /* MagicCards-Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				16311F2C29ED3F3200A3FA58 /* screenshot.png */,
-				16311F2A29ED3F0B00A3FA58 /* README.md */,
-				161C2CD129E80C6500FEA803 /* Sources */,
 				161C2CD029E80C5100FEA803 /* Resources */,
 			);
 			path = "MagicCards-Alamofire";
