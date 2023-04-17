@@ -7,23 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A964EC93B2A9F27C7FB404 /* libPods-MagicCards-Alamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FC6E66D8B65A221BB1E7DF /* libPods-MagicCards-Alamofire.a */; };
+		160CEEE729E81EE000B989A3 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160CEEE629E81EE000B989A3 /* CardViewModel.swift */; };
+		161C2CCF29E80BAD00FEA803 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 161C2CCE29E80BAD00FEA803 /* SnapKit */; };
+		161C2CDA29E80F1C00FEA803 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C2CD929E80F1C00FEA803 /* Model.swift */; };
+		161C2CDE29E8149600FEA803 /* MagicCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C2CDD29E8149600FEA803 /* MagicCardTableViewCell.swift */; };
 		1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007129E7F21600CB6FA6 /* AppDelegate.swift */; };
 		1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007329E7F21600CB6FA6 /* SceneDelegate.swift */; };
-		1690007629E7F21600CB6FA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007529E7F21600CB6FA6 /* ViewController.swift */; };
-		1690007929E7F21600CB6FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1690007729E7F21600CB6FA6 /* Main.storyboard */; };
+		1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1690007529E7F21600CB6FA6 /* MagicViewController.swift */; };
 		1690007B29E7F21A00CB6FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1690007A29E7F21A00CB6FA6 /* Assets.xcassets */; };
-		1690007E29E7F21A00CB6FA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1690007C29E7F21A00CB6FA6 /* LaunchScreen.storyboard */; };
+		16A59C4C29E9526100862E85 /* MagicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A59C4B29E9526100862E85 /* MagicDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160CEEE629E81EE000B989A3 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		161C2CD929E80F1C00FEA803 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		161C2CDD29E8149600FEA803 /* MagicCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCardTableViewCell.swift; sourceTree = "<group>"; };
 		1690006E29E7F21600CB6FA6 /* MagicCards-Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagicCards-Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1690007129E7F21600CB6FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1690007329E7F21600CB6FA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1690007529E7F21600CB6FA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1690007829E7F21600CB6FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1690007529E7F21600CB6FA6 /* MagicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicViewController.swift; sourceTree = "<group>"; };
 		1690007A29E7F21A00CB6FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1690007D29E7F21A00CB6FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1690007F29E7F21A00CB6FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A59C4B29E9526100862E85 /* MagicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicDetailViewController.swift; sourceTree = "<group>"; };
+		41FC6E66D8B65A221BB1E7DF /* libPods-MagicCards-Alamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicCards-Alamofire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF1302EB503CF5D52112B6E /* Pods-MagicCards-Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCards-Alamofire.release.xcconfig"; path = "Target Support Files/Pods-MagicCards-Alamofire/Pods-MagicCards-Alamofire.release.xcconfig"; sourceTree = "<group>"; };
+		B2644159DC069118167427CC /* Pods-MagicCards-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCards-Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-MagicCards-Alamofire/Pods-MagicCards-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A964EC93B2A9F27C7FB404 /* libPods-MagicCards-Alamofire.a in Frameworks */,
+				161C2CCF29E80BAD00FEA803 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161C2CD029E80C5100FEA803 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1690007F29E7F21A00CB6FA6 /* Info.plist */,
+				1690007A29E7F21A00CB6FA6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		161C2CD129E80C6500FEA803 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				161C2CD329E80D8000FEA803 /* Models */,
+				161C2CD429E80D8A00FEA803 /* Views */,
+				161C2CD529E80DAF00FEA803 /* ViewModels */,
+				161C2CD229E80CDC00FEA803 /* Application */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		161C2CD229E80CDC00FEA803 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1690007129E7F21600CB6FA6 /* AppDelegate.swift */,
+				1690007329E7F21600CB6FA6 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		161C2CD329E80D8000FEA803 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				161C2CD929E80F1C00FEA803 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		161C2CD429E80D8A00FEA803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				161C2CD829E80DFB00FEA803 /* Cell */,
+				161C2CD729E80DE800FEA803 /* ViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		161C2CD529E80DAF00FEA803 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				160CEEE629E81EE000B989A3 /* CardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		161C2CD729E80DE800FEA803 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1690007529E7F21600CB6FA6 /* MagicViewController.swift */,
+				16A59C4B29E9526100862E85 /* MagicDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		161C2CD829E80DFB00FEA803 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				161C2CDD29E8149600FEA803 /* MagicCardTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		1690006529E7F21600CB6FA6 = {
 			isa = PBXGroup;
 			children = (
 				1690007029E7F21600CB6FA6 /* MagicCards-Alamofire */,
 				1690006F29E7F21600CB6FA6 /* Products */,
+				7137B8AD3C8E8EF554944631 /* Pods */,
+				960A0BF0EEAD951D12B4E22E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +140,27 @@
 		1690007029E7F21600CB6FA6 /* MagicCards-Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				1690007129E7F21600CB6FA6 /* AppDelegate.swift */,
-				1690007329E7F21600CB6FA6 /* SceneDelegate.swift */,
-				1690007529E7F21600CB6FA6 /* ViewController.swift */,
-				1690007729E7F21600CB6FA6 /* Main.storyboard */,
-				1690007A29E7F21A00CB6FA6 /* Assets.xcassets */,
-				1690007C29E7F21A00CB6FA6 /* LaunchScreen.storyboard */,
-				1690007F29E7F21A00CB6FA6 /* Info.plist */,
+				161C2CD129E80C6500FEA803 /* Sources */,
+				161C2CD029E80C5100FEA803 /* Resources */,
 			);
 			path = "MagicCards-Alamofire";
+			sourceTree = "<group>";
+		};
+		7137B8AD3C8E8EF554944631 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2644159DC069118167427CC /* Pods-MagicCards-Alamofire.debug.xcconfig */,
+				9BF1302EB503CF5D52112B6E /* Pods-MagicCards-Alamofire.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		960A0BF0EEAD951D12B4E22E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41FC6E66D8B65A221BB1E7DF /* libPods-MagicCards-Alamofire.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +170,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1690008229E7F21A00CB6FA6 /* Build configuration list for PBXNativeTarget "MagicCards-Alamofire" */;
 			buildPhases = (
+				A303AA0BD16367D3D1D9167A /* [CP] Check Pods Manifest.lock */,
 				1690006A29E7F21600CB6FA6 /* Sources */,
 				1690006B29E7F21600CB6FA6 /* Frameworks */,
 				1690006C29E7F21600CB6FA6 /* Resources */,
@@ -83,6 +180,9 @@
 			dependencies = (
 			);
 			name = "MagicCards-Alamofire";
+			packageProductDependencies = (
+				161C2CCE29E80BAD00FEA803 /* SnapKit */,
+			);
 			productName = "MagicCards-Alamofire";
 			productReference = 1690006E29E7F21600CB6FA6 /* MagicCards-Alamofire.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +211,9 @@
 				Base,
 			);
 			mainGroup = 1690006529E7F21600CB6FA6;
+			packageReferences = (
+				161C2CCD29E80BAD00FEA803 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 1690006F29E7F21600CB6FA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,45 +228,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1690007E29E7F21A00CB6FA6 /* LaunchScreen.storyboard in Resources */,
 				1690007B29E7F21A00CB6FA6 /* Assets.xcassets in Resources */,
-				1690007929E7F21600CB6FA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A303AA0BD16367D3D1D9167A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicCards-Alamofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1690006A29E7F21600CB6FA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1690007629E7F21600CB6FA6 /* ViewController.swift in Sources */,
+				1690007629E7F21600CB6FA6 /* MagicViewController.swift in Sources */,
 				1690007229E7F21600CB6FA6 /* AppDelegate.swift in Sources */,
 				1690007429E7F21600CB6FA6 /* SceneDelegate.swift in Sources */,
+				16A59C4C29E9526100862E85 /* MagicDetailViewController.swift in Sources */,
+				161C2CDA29E80F1C00FEA803 /* Model.swift in Sources */,
+				161C2CDE29E8149600FEA803 /* MagicCardTableViewCell.swift in Sources */,
+				160CEEE729E81EE000B989A3 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1690007729E7F21600CB6FA6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1690007829E7F21600CB6FA6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1690007C29E7F21A00CB6FA6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1690007D29E7F21A00CB6FA6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1690008029E7F21A00CB6FA6 /* Debug */ = {
@@ -216,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +393,7 @@
 		};
 		1690008329E7F21A00CB6FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2644159DC069118167427CC /* Pods-MagicCards-Alamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,10 +401,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LLVUWV97ZX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MagicCards-Alamofire/Info.plist";
+				INFOPLIST_FILE = "MagicCards-Alamofire/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +421,7 @@
 		};
 		1690008429E7F21A00CB6FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BF1302EB503CF5D52112B6E /* Pods-MagicCards-Alamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,10 +429,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LLVUWV97ZX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MagicCards-Alamofire/Info.plist";
+				INFOPLIST_FILE = "MagicCards-Alamofire/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		161C2CCD29E80BAD00FEA803 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		161C2CCE29E80BAD00FEA803 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 161C2CCD29E80BAD00FEA803 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1690006629E7F21600CB6FA6 /* Project object */;
 }
