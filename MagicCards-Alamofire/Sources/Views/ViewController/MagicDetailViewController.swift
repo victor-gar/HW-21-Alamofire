@@ -25,13 +25,42 @@ class MagicDetailViewController: UIViewController {
     
     private let cardNameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 26, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
     }()
     
-    private let cardDescriptionLabel: UILabel = {
+    private let cardPowerLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        label.textColor = UIColor.systemRed
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private let cardManaLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        label.textColor = UIColor.systemGreen
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private let cardTypeLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private let cardRarityLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 13, weight: .regular)
+        label.numberOfLines = 0
+        return label
+    }()
+    private let cardTextLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         label.numberOfLines = 0
@@ -53,7 +82,11 @@ class MagicDetailViewController: UIViewController {
     private func setupHierarchy() {
         view.addSubview(cardImageView)
         view.addSubview(cardNameLabel)
-        view.addSubview(cardDescriptionLabel)
+        view.addSubview(cardTextLabel)
+        view.addSubview(cardManaLabel)
+        view.addSubview(cardTypeLabel)
+        view.addSubview(cardPowerLabel)
+        view.addSubview(cardRarityLabel)
     }
     
     private func setupLayout() {
@@ -65,57 +98,75 @@ class MagicDetailViewController: UIViewController {
         }
         
         cardNameLabel.snp.makeConstraints { make in
-            make.top.equalTo(cardImageView.snp.bottom).offset(10)
+            make.top.equalTo(cardImageView.snp.bottom).offset(-5)
             make.leading.trailing.equalToSuperview().inset(20)
         }
         
-        cardDescriptionLabel.snp.makeConstraints { make in
-            make.top.equalTo(cardNameLabel.snp.bottom).offset(20)
+        cardManaLabel.snp.makeConstraints { make in
+            make.top.equalTo(cardNameLabel.snp.bottom).offset(10)
+            make.leading.trailing.equalToSuperview().inset(20)
+        }
+        
+        cardTypeLabel.snp.makeConstraints { make in
+            make.top.equalTo(cardManaLabel.snp.bottom).offset(5)
+            make.leading.trailing.equalToSuperview().inset(20)
+        }
+        
+        cardPowerLabel.snp.makeConstraints { make in
+            make.top.equalTo(cardTypeLabel.snp.bottom).offset(10)
+            make.leading.trailing.equalToSuperview().inset(20)
+        }
+        
+        cardRarityLabel.snp.makeConstraints { make in
+            make.top.equalTo(cardPowerLabel.snp.bottom).offset(5)
+            make.leading.trailing.equalToSuperview().inset(20)
+        }
+        
+        cardTextLabel.snp.makeConstraints { make in
+            make.top.equalTo(cardRarityLabel.snp.bottom).offset(10)
             make.centerX.equalToSuperview()
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(20)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(10)
+            make.leading.trailing.equalToSuperview().inset(20)
+            
         }
     }
     
     // MARK: - Actions
     
     func configure() {
-        // Отображение информации о карте
-        
         if let card = card {
             self.cardImageView.image = nil
             self.cardNameLabel.text = nil
-            self.cardDescriptionLabel.text = nil
-            
-            
+            self.cardTextLabel.text = nil
+            self.cardManaLabel.text = nil
+            self.cardTypeLabel.text = nil
+            self.cardPowerLabel.text = nil
+            self.cardRarityLabel.text = nil
             if let imageUrl = card.imageUrl, let url = URL(string: imageUrl) {
                 DispatchQueue.global(qos: .background).async {
                     if let data = try? Data(contentsOf: url) {
                         DispatchQueue.main.async {
                             self.cardImageView.image = UIImage(data: data)
                             self.cardNameLabel.text = card.name
-                            self.cardDescriptionLabel.text = card.type
+                            self.cardTextLabel.text = card.text
+                            self.cardManaLabel.text = "ManaCost: \(card.manaCost)"
+                            self.cardTypeLabel.text = "Type: \(card.type)"
+                            self.cardPowerLabel.text = "Power: \(card.power ?? "")"
+                            self.cardRarityLabel.text = "Rarity: \(card.rarity ?? "")"
                         }
                     } else {
                         DispatchQueue.main.async {
-                            // Если изображение не удалось загрузить, показываем пустые значения
                             self.cardImageView.image = UIImage(named: "image")
-                            self.cardNameLabel.text = card.name
-                            self.cardDescriptionLabel.text = card.type
+                            self.cardNameLabel.text = "Name: -"
+                            self.cardTextLabel.text = "Text: -"
+                            self.cardManaLabel.text = "ManaCost: -"
+                            self.cardTypeLabel.text = "Type: -"
+                            self.cardPowerLabel.text = "Power: -"
+                            self.cardRarityLabel.text = "Rarity: -"
                         }
                     }
                 }
-                
             }
-        } else {
-            // Если ссылки на изображение нет, показываем пустые значения
-            self.cardImageView.image = UIImage(named: "image")
-            self.cardNameLabel.text = card?.name
-            self.cardDescriptionLabel.text = card?.type
-            
-            
-            
-            
         }
     }
-    
 }
