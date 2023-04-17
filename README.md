@@ -1,6 +1,6 @@
 # MagicCards
 
-![MagicCards Screenshot](/screenshot.png)
+![MagicCards Screenshot](/screenshot.png){:height="50%" width="50%"}
 
 MagicCards - это приложение для просмотра карт из игры Magic: The Gathering с использованием Magic: The Gathering API. В этом проекте реализована архитектура MVVM с использованием библиотеки Alamofire для обработки сетевых запросов и библиотеки SnapKit для организации UI.
 
